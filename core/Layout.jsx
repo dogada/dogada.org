@@ -8,7 +8,7 @@ export function Layout ({meta, children}) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />      
-      <title>{meta.title } · {process.env.NEXT_PUBLIC_SITE_DOMAIN}</title>
+      <title>{`${meta.title } · ${process.env.NEXT_PUBLIC_SITE_DOMAIN}`}</title>
     </Head>
     {children}
   </div>
