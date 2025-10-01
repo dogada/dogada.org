@@ -1,0 +1,17 @@
+import { Layout } from "../core/Layout"
+
+export const meta = {
+  title: "MultiSync (file-based event log sync for local-first apps)"
+}
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
+
+# MultiSync — file-based event log sync for local-first apps
+
+MultiSync is a data hub for local-first apps that allows to sync append-only logs of ActivityStreams events between remote and local filesystems. It's important that clients read logs of events directly as files from S3-like remote filesystems.
+
+Any ActityStream feed (for example Mastodon feed) can be converted to a series of [Content Addressable aRchives](https://ipld.io/specs/transport/car/carv2/), deployed to S3-like storage and made available as files for clients.
+
+This allows to distribute public ActivityStream feeds as static files with near realtime updates using a fraction of costs required for standalone servers and significantly increase availability of data.
+
+The MultiSync is used as a data exchange backend for local-first application [Piki](/piki) (hybrid of wiki and note-taking applications based on the ActivityPub protocol).
