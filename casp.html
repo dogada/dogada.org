@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" data-next-head=""/><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" data-next-head=""/><title data-next-head="">CASP (Content-addressable Publishing) · dogada.org</title><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/><link rel="manifest" href="/site.webmanifest"/><link rel="preload" href="/_next/static/css/a2c3b05276d36cd6.css" as="style"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/><link rel="stylesheet" href="/_next/static/css/a2c3b05276d36cd6.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" noModule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/_next/static/chunks/webpack-8cac0b4b405cede1.js" defer=""></script><script src="/_next/static/chunks/framework-a29e7d72fb681161.js" defer=""></script><script src="/_next/static/chunks/main-1cdc246a60c8ad08.js" defer=""></script><script src="/_next/static/chunks/pages/_app-5201b95c73b6c6b1.js" defer=""></script><script src="/_next/static/chunks/pages/casp-c6eb122c31768b1e.js" defer=""></script><script src="/_next/static/WChnAMb_LFwBnJctqjO6G/_buildManifest.js" defer=""></script><script src="/_next/static/WChnAMb_LFwBnJctqjO6G/_ssgManifest.js" defer=""></script></head><body class="_doc"><div id="__next"><div class="container"><div><h1>CASP (Content-Addressable Publishing)</h1>
+<p>CASP allows publishing any feed of records (Activity Streams, RSS, etc.) as a series of<br/>
+<a href="https://ipld.io/specs/transport/car/carv2/">Content Addressable aRchives</a>.<br/>
+<!-- -->This makes any publishing feed <strong>highly available</strong> because feeds are no longer bound to a single URL<br/>
+<!-- -->(or to a provider as an organizational entity) and can be uploaded to and downloaded from multiple hosts.</p>
+<p>Each CASP feed is <strong>blockchain-like in structure</strong>, where the hashes of feed entries are signed by the author&#x27;s private key(s).</p>
+<p>Each feed has a <a href="https://www.w3.org/TR/did-1.0/">Decentralized Identifier</a>, and the corresponding DID document<br/>
+<!-- -->contains profile information and public cryptographic keys used to verify the authenticity of CASP feeds.</p>
+<h2>Main outcomes of the project</h2>
+<ul>
+<li>authors are not dependent on ActivityPub server admins and can publish content to several CASP hubs in parallel;</li>
+<li>no more migration issues between ActivityPub hubs — you own your data;</li>
+<li>the highly available CASP architecture mitigates the periodic downtimes of independent hubs and<br/>
+<!-- -->makes the whole network rock-solid.</li>
+</ul>
+<p>The CASP-powered <a href="/multisync/">MultiSync</a> is used as the data-exchange backend for the<br/>
+<!-- -->local-first knowledge-management application <a href="/piki">Piki</a>.</p></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/casp","query":{},"buildId":"WChnAMb_LFwBnJctqjO6G","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
