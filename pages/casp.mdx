@@ -1,0 +1,29 @@
+import { Layout } from "../core/Layout"
+
+export const meta = {
+  title: "CASP (Content-addressable Publishing)"
+}
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
+
+# CASP (Content-Addressable Publishing)
+
+CASP allows publishing any feed of records (Activity Streams, RSS, etc.) as a series of  
+[Content Addressable aRchives](https://ipld.io/specs/transport/car/carv2/).  
+This makes any publishing feed **highly available** because feeds are no longer bound to a single URL  
+(or to a provider as an organizational entity) and can be uploaded to and downloaded from multiple hosts.
+
+Each CASP feed is **blockchain-like in structure**, where the hashes of feed entries are signed by the author's private key(s).
+
+Each feed has a [Decentralized Identifier](https://www.w3.org/TR/did-1.0/), and the corresponding DID document  
+contains profile information and public cryptographic keys used to verify the authenticity of CASP feeds.
+
+## Main outcomes of the project
+
+- authors are not dependent on ActivityPub server admins and can publish content to several CASP hubs in parallel;
+- no more migration issues between ActivityPub hubs — you own your data;
+- the highly available CASP architecture mitigates the periodic downtimes of independent hubs and  
+  makes the whole network rock-solid.
+
+The CASP-powered [MultiSync](/multisync/) is used as the data-exchange backend for the  
+local-first knowledge-management application [Piki](/piki).
